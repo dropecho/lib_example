@@ -1,3 +1,16 @@
+# [0.6.0](https://github.com/dropecho/lib_example/compare/0.5.3...0.6.0) (2022-12-02)
+
+
+### Bug Fixes
+
+* update to 1.0.1 of semantic-release-haxelib. ([df65b79](https://github.com/dropecho/lib_example/commit/df65b79e642c3acc1a780b12ca212c8cf4522d86))
+
+
+### Features
+
+* Update semantic release, setup base tests. ([955bf6f](https://github.com/dropecho/lib_example/commit/955bf6f2a40425cb161f9b645ed61e90ca13f818))
+* Update to use shared workflows. ([2183660](https://github.com/dropecho/lib_example/commit/218366005103720ef8250177555235e57e52e26b))
+
 ## [0.5.3](https://github.com/dropecho/lib_example/compare/0.5.2...0.5.3) (2020-09-17)
 
 
