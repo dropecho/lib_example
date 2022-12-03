@@ -1,3 +1,10 @@
+## [0.6.8](https://github.com/dropecho/lib_example/compare/0.6.7...0.6.8) (2022-12-03)
+
+
+### Bug Fixes
+
+* Put entire built src into npm package. ([c0fe1e9](https://github.com/dropecho/lib_example/commit/c0fe1e95ad4b518bc6867dc60d16b437591e48c4))
+
 ## [0.6.7](https://github.com/dropecho/lib_example/compare/0.6.6...0.6.7) (2022-12-03)
 
 
