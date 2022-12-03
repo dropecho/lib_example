@@ -4,7 +4,8 @@
   "description": "An example haxelib that outputs to multiple targets.",
   "author": "vantreeseba <vantreeseba@gmail.com>",
   "repository": "github:dropecho/lib_example",
-  "main": "dist/js/index.js",
+  "main": "dist/js/cjs/index.js",
+  "module": "dist/js/esm/index.js",
   "files": [
     "dist/js/**/*"
   ],
@@ -14,7 +15,8 @@
   "license": "MIT",
   "scripts": {
     "build": "haxe build.hxml",
-    "test": "haxelib run munit t"
+    "test": "haxelib run munit t",
+    "clean": "rm -rf dist && rm -rf artifacts"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",

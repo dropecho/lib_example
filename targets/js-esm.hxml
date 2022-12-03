@@ -4,6 +4,9 @@
 -cp src
 --macro include('', true, null, ['src'])
 
+# LIBRARIES
+-lib genes
+
 # DEFINES
 -D dco=no
 -D js-es=6
@@ -11,4 +14,4 @@
 -D analyzer-optimize
 
 # OUTPUT 
--js dist/js/cjs/index.js 
+-js dist/js/esm/index.js 
