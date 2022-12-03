@@ -6,7 +6,7 @@
   "repository": "github:dropecho/lib_example",
   "main": "dist/js/index.js",
   "files": [
-    "dist/js/index.js"
+    "dist/js/**/*"
   ],
   "publishConfig": {
     "access": "public"
