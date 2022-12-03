@@ -3,6 +3,7 @@
 #### Use as template
 
 Rename package in haxelib.json  
+Ensure all deps are included as needed (genes for esm, hxcs etc).  
 Rename package in package.json  
 Rename package in .releaserc.json  
 
