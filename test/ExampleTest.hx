@@ -14,4 +14,3 @@ class ExampleTest {
 		Assert.areEqual(LibExample.test(), 2);
 	}
 }
-
