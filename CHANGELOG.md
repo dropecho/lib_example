@@ -1,3 +1,10 @@
+## [0.9.1](https://github.com/dropecho/lib_example/compare/0.9.0...0.9.1) (2022-12-03)
+
+
+### Bug Fixes
+
+* Add version to built dll. ([f0d3aa2](https://github.com/dropecho/lib_example/commit/f0d3aa2ba44ba86a60c770b403a52872401f6ecd))
+
 # [0.9.0](https://github.com/dropecho/lib_example/compare/0.8.0...0.9.0) (2022-12-03)
 
 
