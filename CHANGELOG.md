@@ -1,3 +1,10 @@
+## [0.6.5](https://github.com/dropecho/lib_example/compare/0.6.4...0.6.5) (2022-12-03)
+
+
+### Bug Fixes
+
+* bump ([5065fa2](https://github.com/dropecho/lib_example/commit/5065fa2a075323e3ab810a9d63bcc6c02961e6b6))
+
 ## [0.6.4](https://github.com/dropecho/lib_example/compare/0.6.3...0.6.4) (2022-12-03)
 
 
