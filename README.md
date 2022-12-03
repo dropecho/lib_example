@@ -11,8 +11,8 @@ Replace src and tests.
 
 #### Output
 
-The CS is built into dist/cs
+The CS is built into dist/cs  
 The release is added to GH via .releaserc and named there. 
 
-The JS is built into dist/js/cjs and dist/js/esm.
+The JS is built into dist/js/cjs and dist/js/esm.  
 With package exports, should work for both ESM and CJS imports.
