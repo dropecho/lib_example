@@ -4,11 +4,11 @@
   "description": "An example haxelib that outputs to multiple targets.",
   "author": "vantreeseba <vantreeseba@gmail.com>",
   "repository": "github:dropecho/lib_example",
-  "main": "dist/js/cjs/index.js",
-  "module": "dist/js/esm/index.js",
+  "type": "module",
   "files": [
     "dist/js/**/*"
   ],
+  "main": "./dist/js/cjs/index.cjs",
   "publishConfig": {
     "access": "public"
   },
@@ -28,5 +28,11 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "semantic-release": "^19.0.5",
     "semantic-release-haxelib": "^1.1.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/js/cjs/index.cjs",
+      "import": "./dist/js/esm/index.js"
+    }
   }
 }

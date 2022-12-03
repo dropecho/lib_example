@@ -11,4 +11,4 @@
 -D analyzer-optimize
 
 # OUTPUT 
--js dist/js/cjs/index.js 
+-js dist/js/cjs/index.cjs 
