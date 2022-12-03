@@ -12,4 +12,4 @@
 -D analyzer-optimize
 
 # OUTPUT
--cs dist/cs/rules_engine
+-cs dist/cs/

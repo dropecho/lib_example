@@ -45,7 +45,18 @@
         "additionalFiles": []
       }
     ],
-    "@semantic-release/github",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist/cs/bin/cs.dll",
+            "name": "dropecho.lib_example.dll",
+            "label": "C# DLL"
+          }
+        ]
+      }
+    ],
     [
       "@semantic-release/git",
       {
