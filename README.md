@@ -10,6 +10,8 @@ Rename package in .releaserc.json
 Update readme, license as required.  
 Replace src and tests.
 
+Copy .gitignore
+
 #### Output
 
 The CS is built into dist/cs  
