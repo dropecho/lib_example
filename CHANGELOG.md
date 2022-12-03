@@ -1,3 +1,10 @@
+## [0.6.3](https://github.com/dropecho/lib_example/compare/0.6.2...0.6.3) (2022-12-03)
+
+
+### Bug Fixes
+
+* update semantic-release-haxelib again. ([f14ddae](https://github.com/dropecho/lib_example/commit/f14ddaeac4d0916032530055cffff40730b38f87))
+
 ## [0.6.2](https://github.com/dropecho/lib_example/compare/0.6.1...0.6.2) (2022-12-03)
 
 
