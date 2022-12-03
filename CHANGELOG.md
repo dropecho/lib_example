@@ -1,3 +1,10 @@
+## [0.6.7](https://github.com/dropecho/lib_example/compare/0.6.6...0.6.7) (2022-12-03)
+
+
+### Bug Fixes
+
+* upgrade release-haxelib version. ([c9bca9c](https://github.com/dropecho/lib_example/commit/c9bca9c055e893b5cd5313783aef66b07e3e549d))
+
 ## [0.6.6](https://github.com/dropecho/lib_example/compare/0.6.5...0.6.6) (2022-12-03)
 
 
