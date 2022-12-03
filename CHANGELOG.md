@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/dropecho/lib_example/compare/0.8.0...0.9.0) (2022-12-03)
+
+
+### Features
+
+* setup cs dll asset to release. ([990af56](https://github.com/dropecho/lib_example/commit/990af56ef7f71f4c44a10c1ec3ff2792ddc8d921))
+
 # [0.8.0](https://github.com/dropecho/lib_example/compare/0.7.0...0.8.0) (2022-12-03)
 
 
