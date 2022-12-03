@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/dropecho/lib_example/compare/0.7.0...0.8.0) (2022-12-03)
+
+
+### Features
+
+* Setup exports, make ESM build work. ([8403385](https://github.com/dropecho/lib_example/commit/84033850414f5aeba544c4dd6b2a2ffe9888ff65))
+
 # [0.7.0](https://github.com/dropecho/lib_example/compare/0.6.8...0.7.0) (2022-12-03)
 
 
