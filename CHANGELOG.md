@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/dropecho/lib_example/compare/0.6.8...0.7.0) (2022-12-03)
+
+
+### Features
+
+* setup esm and cjs builds. ([fc3f381](https://github.com/dropecho/lib_example/commit/fc3f381a3e7f59f4f8fab9f4efb6a22585856a7f))
+
 ## [0.6.8](https://github.com/dropecho/lib_example/compare/0.6.7...0.6.8) (2022-12-03)
 
 
