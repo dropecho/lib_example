@@ -1,3 +1,17 @@
+## [0.6.4](https://github.com/dropecho/lib_example/compare/0.6.3...0.6.4) (2022-12-03)
+
+
+### Bug Fixes
+
+* bump version. ([dd41f5f](https://github.com/dropecho/lib_example/commit/dd41f5f25fc2bee6944b09001acd5146a8d1f22f))
+
+## [0.6.4](https://github.com/dropecho/lib_example/compare/0.6.3...0.6.4) (2022-12-03)
+
+
+### Bug Fixes
+
+* bump version. ([dd41f5f](https://github.com/dropecho/lib_example/commit/dd41f5f25fc2bee6944b09001acd5146a8d1f22f))
+
 ## [0.6.3](https://github.com/dropecho/lib_example/compare/0.6.2...0.6.3) (2022-12-03)
 
 
