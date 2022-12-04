@@ -1,3 +1,12 @@
+## [0.9.2](https://github.com/dropecho/lib_example/compare/0.9.1...0.9.2) (2022-12-04)
+
+
+### Bug Fixes
+
+* Cleanup build and move shared into build.hxml. ([5d46d96](https://github.com/dropecho/lib_example/commit/5d46d96825a3e80ad281dd7f9f417c9400a43b52))
+* Fix issue with assembly name in C# in actual use. ([2a523b5](https://github.com/dropecho/lib_example/commit/2a523b56f4fac932cc10b6f5f4eabc18db62b39f))
+* Fix issue with assembly name in C# in actual use. ([53d69be](https://github.com/dropecho/lib_example/commit/53d69be957ffa6430b5841b344680d794037eb72))
+
 ## [0.9.1](https://github.com/dropecho/lib_example/compare/0.9.0...0.9.1) (2022-12-03)
 
 
