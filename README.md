@@ -2,17 +2,20 @@
 
 #### Use as template
 
-Rename package in haxelib.json
-Rename package in package.json
-Rename package in .releaserc.json
+Rename package in haxelib.json  
+Ensure all deps are included as needed (genes for esm, hxcs etc).  
+Rename package in package.json  
+Rename package in .releaserc.json  
 
-Update readme, license as required.
+Update readme, license as required.  
 Replace src and tests.
+
+Copy .gitignore
 
 #### Output
 
-The CS is built into dist/cs
+The CS is built into dist/cs  
 The release is added to GH via .releaserc and named there. 
 
-The JS is built into dist/js/cjs and dist/js/esm.
+The JS is built into dist/js/cjs and dist/js/esm.  
 With package exports, should work for both ESM and CJS imports.
