@@ -7,5 +7,12 @@
 --library dropecho.testing
 --library buddy
 
+--each
+
+--next
 -main TestMain
 --neko artifacts/test/neko_test.n
+
+--next
+--library hxnodejs
+--js artifacts/test/js_test.cjs
