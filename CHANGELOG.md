@@ -1,3 +1,17 @@
+# [0.10.0](https://github.com/dropecho/lib_example/compare/0.9.2...0.10.0) (2023-07-06)
+
+
+### Bug Fixes
+
+* Fix issue with installing test libs. ([2ab80aa](https://github.com/dropecho/lib_example/commit/2ab80aaf574bda68e160cb70f0086450c4f01606))
+* Fix missing hxnodejs. ([81ebb91](https://github.com/dropecho/lib_example/commit/81ebb9128d6cf8d4449286b2b1b43ea8e8c491a4))
+* Fix tests for now. ([13f690e](https://github.com/dropecho/lib_example/commit/13f690e52b075ca8ace007479f32f2454c34c215))
+
+
+### Features
+
+* Testing other test frameworks, set up basic for dropecho.testing autotest. ([7b74ac4](https://github.com/dropecho/lib_example/commit/7b74ac421e161f776f759346535a15153fe9cbd0))
+
 ## [0.9.2](https://github.com/dropecho/lib_example/compare/0.9.1...0.9.2) (2022-12-04)
 
 
