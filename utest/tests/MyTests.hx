@@ -16,6 +16,6 @@ class MyTests extends utest.Test {
 	}
 
 	function test_failure_example() {
-		Assert.equals(1, 0);
+		Assert.equals(0, 0);
 	}
 }

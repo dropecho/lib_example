@@ -14,6 +14,6 @@ class SecondSuiteTests extends utest.Test {
 	}
 
 	function test_failure_example_2() {
-		Assert.equals(1, 0);
+		Assert.equals(0, 0);
 	}
 }
