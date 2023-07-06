@@ -3,6 +3,9 @@
 
 #test libs
 -lib munit
+--library utest
+--library dropecho.testing
+--library buddy
 
 -main TestMain
 --neko artifacts/test/neko_test.n
