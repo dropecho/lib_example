@@ -1,0 +1,15 @@
+--class-path src
+--class-path test-buddy
+
+#test libs
+--library dropecho.testing
+--library buddy
+
+--each
+
+--next
+--neko artifacts/test/autotest.n
+
+--next
+--library hxnodejs
+--js artifacts/test/js_test.cjs

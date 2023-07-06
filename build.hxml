@@ -1,9 +1,8 @@
 # CODE PATH
+-D analyzer-optimize
+
 -cp src
 --macro include('', true, null, ['src'])
-
--D analyzer-optimize
--D dce=no
 
 # PUT LIBS HERE.
 # -lib seedyrng
