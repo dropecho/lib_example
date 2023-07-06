@@ -12,6 +12,11 @@ Replace src and tests.
 
 Copy .gitignore
 
+## Defaults / settings
+
+The JS ESM build also outputs .dts files for typing.
+For this to "look correct".
+
 #### Output
 
 The CS is built into dist/cs  

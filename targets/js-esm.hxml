@@ -4,8 +4,9 @@
 -lib genes
 
 # DEFINES
+-D dts        
 -D js-es=6
--D source-map-content
+# -D source-map-content
 
 # OUTPUT 
 -js dist/js/esm/index.js 

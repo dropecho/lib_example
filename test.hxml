@@ -3,9 +3,6 @@
 
 #test libs
 -lib munit
--lib hamcrest
 
 -main TestMain
-
--lib hxnodejs
--js artifacts/test/js_test.cjs
+--neko artifacts/test/neko_test.n

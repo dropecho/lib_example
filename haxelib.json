@@ -2,10 +2,7 @@
   "name": "dropecho.lib_example",
   "description": "A multi-output library example/template.",
   "classPath": "src/",
-  "dependencies": {
-    "genes": "",
-    "hxcs": ""
-  },
+  "dependencies": {},
   "url": "https://github.com/dropecho/lib_example/",
   "contributors": [
     "vantreeseba"

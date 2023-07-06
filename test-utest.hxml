@@ -1,0 +1,15 @@
+--class-path src
+--class-path utest
+
+#test libs
+--library utest
+--library dropecho.testing
+
+--each
+
+--next
+--neko artifacts/test/autotest.n
+
+--next
+--library hxnodejs
+--js artifacts/test/js_test.cjs

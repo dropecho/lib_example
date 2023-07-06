@@ -1,7 +1,7 @@
-package dropecho.lib_example;
+package dropecho.lib_example.other;
 
-@:expose('OtherExample')
-class OtherExample {
+@:expose('banana.foo')
+class Example {
 	public var x:Int;
 
 	public function new() {
