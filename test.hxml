@@ -16,17 +16,25 @@
 
 --each
 
-# Run the suite on Node.
+# The suite runs on every runnable target below. These mirror the program
+# targets in targets/ — gdscript and docs are skipped (not runnable test
+# programs) and js-esm shares the js runtime, so neither adds test coverage.
+
+# JS (Node)
 --next
 -lib hxnodejs
 -D js-es=6
 -js artifacts/js_test.cjs
 
-# Other targets — uncomment to also run the suite there.
+# C# — commented out: builds and passes under mono, but the dropecho.testing
+# runner execs the .exe directly, which needs mono registered for .exe (Windows,
+# or a binfmt_misc mono entry on Linux). Uncomment where that is set up.
+# -D unsafe is required: the hxcs std library uses unsafe pointers.
 # --next
-# -neko artifacts/neko_test.n
-# --next
+# -D unsafe
 # -D net-ver=50
 # -cs artifacts/cs_test
-# --next
-# -python artifacts/py_test.py
+
+# Python
+--next
+-python artifacts/py_test.py

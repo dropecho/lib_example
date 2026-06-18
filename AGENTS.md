@@ -76,7 +76,13 @@ npm run clean    # remove dist/ and artifacts/
   library deps) before `--each`, then builds each `targets/*.hxml` separated by `--next`.
 - `test.hxml` lists libs/targets only — **no `-main`**. The `dropecho.testing` runner injects
   `--main dropecho.testing.AutoTest` (plus instrument/coverage from `.dropecho.testing.json`),
-  then runs each target it finds in the hxml (`-js artifacts/js_test.cjs` on Node).
+  then builds and runs the suite on every target in the hxml: **JS (Node) and Python**.
+  gdscript and docs are not included — they are not runnable test programs — and js-esm would
+  just re-run the JS suite.
+- A **C#** test run is present but commented out in `test.hxml`. It builds and passes under
+  `mono artifacts/cs_test/bin/AutoTest.exe`, but the runner execs the built `.exe` directly, so
+  it needs `mono` registered for `.exe` (Windows, or Linux with a `binfmt_misc` mono entry).
+  Uncomment the C# block where that is set up.
 
 To type-check quickly without generating output: `haxe build.hxml --no-output`.
 
