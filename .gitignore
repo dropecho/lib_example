@@ -7,3 +7,4 @@ artifacts
 lcov.info
 *.swp
 .temp
+.vim/
