@@ -1,12 +1,11 @@
-## JS
+# JavaScript (ES module)
+#
+# genes emits an ES module plus .d.ts typings. Do NOT set `-D js-es` here: it
+# conflicts with genes and corrupts the output.
 
-# LIBRARIES
 -lib genes
 
-# DEFINES
--D dts        
--D js-es=6
-# -D source-map-content
+-D dts
+-D source-map-content
 
-# OUTPUT 
--js dist/js/esm/index.js 
+-js dist/js/esm/index.js

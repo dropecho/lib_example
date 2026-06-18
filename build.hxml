@@ -1,19 +1,32 @@
-# CODE PATH
--D analyzer-optimize
+# Shared options — everything before `--each` is applied to every target below.
 
+# Source class path.
 -cp src
+
+# Pull every module under src/ into the build (not just those reachable from a
+# -main), so the whole library is compiled regardless of target entry point.
 --macro include('', true, null, ['src'])
 
-# PUT LIBS HERE.
+# Optimize the generated code.
+-D analyzer-optimize
+
+# Add library dependencies here, e.g.:
 # -lib seedyrng
 
-# Include above in each target.
+# Apply everything above to each of the targets that follow.
 --each
 
+# Each target's options live in its own hxml under targets/.
 targets/js.hxml
 --next
 targets/js-esm.hxml
 --next
 targets/cs.hxml
---next
-targets/docs.hxml
+
+# Opt-in targets — uncomment a pair to also build it.
+# --next
+# targets/python.hxml
+# --next
+# targets/reflaxe-gdscript.hxml
+# --next
+# targets/docs.hxml

@@ -1,18 +1,32 @@
 -cp src
 -cp test
 
-#test libs
--lib munit
---library utest
---library dropecho.testing
---library buddy
+# Test libraries. `dropecho.testing` auto-discovers every `*Tests.hx` class on
+# the classpath and injects the `--main` entry point itself, so none is set here.
+-lib dropecho.testing
+-lib utest
+
+-D analyzer-optimize
+-D analyzer-user-var-fusion
+-w -WDeprecated
+
+# Compile the whole library so coverage sees every module, not just what the
+# tests reach.
+--macro include('', true, null, ['src'])
 
 --each
 
+# Run the suite on Node.
 --next
--main TestMain
---neko artifacts/test/neko_test.n
+-lib hxnodejs
+-D js-es=6
+-js artifacts/js_test.cjs
 
---next
---library hxnodejs
---js artifacts/test/js_test.cjs
+# Other targets — uncomment to also run the suite there.
+# --next
+# -neko artifacts/neko_test.n
+# --next
+# -D net-ver=50
+# -cs artifacts/cs_test
+# --next
+# -python artifacts/py_test.py

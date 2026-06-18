@@ -1,9 +1,9 @@
 {
-  "root_package": "dropecho",
+  "root_package": "dropecho.lib_example",
   "instrument": {
     "coverage": true,
     "profiler": false,
-    "coverage_reporter": "coverage-console-file-summary-reporter"
+    "coverage_reporter": "coverage-lcov-reporter"
   },
-  "hxml": "test-utest.hxml"
+  "hxml": "test.hxml"
 }

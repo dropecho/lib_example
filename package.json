@@ -1,7 +1,7 @@
 {
   "name": "@dropecho/lib_example",
   "version": "0.10.0",
-  "description": "An example haxelib that outputs to multiple targets.",
+  "description": "A multi-target Haxe library template (haxelib + npm).",
   "author": "vantreeseba <vantreeseba@gmail.com>",
   "repository": "github:dropecho/lib_example",
   "type": "module",
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "npm run clean && haxe build.hxml",
     "test": "haxelib run dropecho.testing",
-    "clean": "rm -rf dist && rm -rf artifacts"
+    "clean": "rm -rf dist artifacts"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
