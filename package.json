@@ -15,8 +15,9 @@
   },
   "license": "MIT",
   "scripts": {
+    "prepare": "lix download",
     "build": "npm run clean && haxe build.hxml",
-    "test": "haxelib run dropecho.testing",
+    "test": "lix dropecho.testing",
     "clean": "rm -rf dist artifacts"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "lix": "^16.0.2",
     "semantic-release": "^19.0.5",
     "semantic-release-haxelib": "^1.1.0"
   },

@@ -23,6 +23,12 @@ published to both haxelib and npm. Clone it, rename, and replace the example cod
 - **Targets:** JS CommonJS, JS ES module (+ `.d.ts` via genes), C# (DLL). Python, Godot
   GDScript, and docs targets ship commented-out in `build.hxml`.
 - **Test runner:** `dropecho.testing` (auto-discovery) over `utest`; `instrument` for coverage.
+- **Dependencies:** managed by [lix](https://github.com/lix-pm/lix.client), declared as a
+  `devDependency` so `npm install` puts its `haxe`/`haxelib` shims on the npm-script `PATH`
+  (no global lix needed). The Haxe version is pinned in `.haxerc`; each enabled target's libs
+  are pinned in `haxe_libraries/*.hxml`. The shimmed `haxe` resolves libs from those files
+  (scoped, not global haxelib). Opt-in targets (e.g. GDScript's `gdscript`) are not pinned
+  until you `lix install` them.
 - **Source root:** `src/` · **Tests root:** `test/`
 - **Releases:** automated via `semantic-release` (+ `semantic-release-haxelib`).
 
@@ -35,6 +41,8 @@ published to both haxelib and npm. Clone it, rename, and replace the example cod
 3. Update `root_package` in `.dropecho.testing.json` to your library's package.
 4. Adjust the output paths and enabled targets in `build.hxml` + `targets/*.hxml`.
 5. Replace the example sources and `*Tests.hx`, refresh `README.md` and `LICENSE.md`.
+6. Run `npm install` (→ `lix download`) to fetch the pinned Haxe + libs, then `npm test`.
+   Pin a different Haxe version with `lix install haxe <version>`; manage libs with `lix install`.
 
 ---
 
@@ -52,6 +60,8 @@ build.hxml                  # multi-target build (shared opts + --each/--next)
 targets/                    # one hxml per target (js, js-esm, cs, python, docs, gdscript)
 test.hxml                   # test build (libs/targets only — no -main)
 .dropecho.testing.json      # test-runner config (coverage, root_package, hxml)
+.haxerc                     # lix: pinned Haxe version + scoped lib resolution
+haxe_libraries/             # lix: one hxml per pinned dep (some carry manual macro/-D lines — keep them when re-pinning)
 dist/                       # compiled output
 artifacts/                  # compiled test output + coverage reports
 ```
@@ -67,10 +77,16 @@ registers every `*Tests.hx` class on the classpath (note the plural — `Test.hx
 Prefer `npm` scripts over invoking Haxe tools directly.
 
 ```bash
+npm install      # → lix download   (fetch the pinned Haxe + libs into the lix cache)
 npm run build    # → haxe build.hxml   (JS cjs + JS esm + C#)
-npm test         # → haxelib run dropecho.testing
+npm test         # → lix dropecho.testing
 npm run clean    # remove dist/ and artifacts/
 ```
+
+`npm install` runs `lix download` (via the `prepare` lifecycle script) to materialize the deps pinned
+in `.haxerc` + `haxe_libraries/`. To add a dependency, run `lix install haxelib:<name>` (or
+`lix install gh:<owner>/<repo>` for a git lib) — lix writes its pinned `haxe_libraries/<name>.hxml`
+— then add a matching `-lib <name>` to `build.hxml`/`test.hxml`. Commit the generated hxml.
 
 - `build.hxml` puts shared options (class path, `--macro include`, `-D analyzer-optimize`,
   library deps) before `--each`, then builds each `targets/*.hxml` separated by `--next`.

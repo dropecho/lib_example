@@ -17,11 +17,15 @@ published to both **haxelib** and **npm**. Clone it, rename, and replace the exa
 ## Develop
 
 ```bash
+npm install     # fetch pinned Haxe + libs via lix (runs `lix download`)
 npm run build   # build the enabled targets (haxe build.hxml)
-npm test        # run the utest suite via dropecho.testing
+npm test        # run the utest suite via dropecho.testing (lix dropecho.testing)
 npm run clean   # remove dist/ and artifacts/
 ```
 
+- Dependencies are managed by [lix](https://github.com/lix-pm/lix.client) (a `devDependency`,
+  so no global install is needed): the Haxe version is pinned in `.haxerc` and each lib in
+  `haxe_libraries/`. `npm install` installs lix, then runs `lix download` to materialize them.
 - Build options are split into shared settings (top of `build.hxml`) and one hxml per target
   under `targets/`. Enable a target by uncommenting its `--next targets/<name>.hxml` pair.
 - Tests are auto-discovered: every `test/**/*Tests.hx` class that `extends utest.Test` is
@@ -35,8 +39,8 @@ npm run clean   # remove dist/ and artifacts/
 4. Adjust output paths and enabled targets in `build.hxml` + `targets/*.hxml`.
 5. Replace the example sources and `*Tests.hx`; refresh this README and `LICENSE.md`.
 
-Ensure any target's extra dependencies are installed (e.g. `genes` for the ESM build, `hxcs`
-for C#, `reflaxe.gdscript` for GDScript).
+Pin any target's extra dependencies with lix (e.g. `lix install haxelib:genes` for the ESM
+build, `hxcs` for C#, `gdscript` for GDScript) — it writes the lock to `haxe_libraries/`.
 
 ## JavaScript output
 
