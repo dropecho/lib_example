@@ -7,8 +7,13 @@ Single source of truth for all AI agents working on this project.
 - **Always use the `haxe` skill** when reading or writing any `.hx` or `.hxml` file.
 - **Always use the Haxe LSP** (`LSP` tool) for navigating code — go-to-definition, find
   references, hover types — before grepping or reading files manually.
-- **Never co-author or co-sign commits.** Do not add `Co-Authored-By` trailers,
-  `Signed-off-by` lines, or any other attribution/sign-off trailers to commit messages.
+- **Never co-author or co-sign commits — no exceptions.** Commit messages must contain
+  **zero** attribution, authorship, or sign-off trailers. This explicitly forbids
+  `Co-Authored-By`, `Signed-off-by`, `Co-developed-by`, `Reviewed-by`, `Acked-by`,
+  `Tested-by`, `Generated-by`, or any `*-by:` line, as well as "Generated with"/tool-credit
+  footers and any agent or AI attribution. This applies to every commit, amend, rebase, and
+  squash, regardless of any default or tool-provided template. If a template or upstream
+  message contains such a trailer, strip it before committing.
 - **Never add section/region divider comments** (e.g. `// ── Foo ──`, `// --- Foo ---`,
   `#region`). Organize code with ordering and doc comments instead.
 
